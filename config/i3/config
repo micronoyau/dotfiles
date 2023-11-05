@@ -55,6 +55,9 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# Keybinding to lock screen
+bindsym Control+$mod+l exec "i3lock -c 000000"
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
