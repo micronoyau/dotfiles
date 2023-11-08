@@ -75,6 +75,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# Screenshot
+bindsym --release Print exec "import ~/Pictures/Screenshots/screen-$(date +'%d-%m-%Y-%T-%N').png"
+
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
