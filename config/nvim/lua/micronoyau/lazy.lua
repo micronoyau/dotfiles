@@ -78,5 +78,5 @@ require("lazy").setup({
 
 })
 
-require 'hex'.setup()
+require("hex").setup()
 
