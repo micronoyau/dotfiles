@@ -74,9 +74,15 @@ require("lazy").setup({
   ft = { "markdown" },
 },
 
-{ 'RaafatTurki/hex.nvim' }
+{ 'RaafatTurki/hex.nvim' },
+
+{
+    'numToStr/Comment.nvim',
+    lazy = false,
+}
 
 })
 
 require("hex").setup()
+require("Comment").setup()
 
