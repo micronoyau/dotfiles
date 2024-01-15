@@ -79,7 +79,9 @@ require("lazy").setup({
 {
     'numToStr/Comment.nvim',
     lazy = false,
-}
+},
+
+{ 'neovim/nvim-lspconfig' }
 
 })
 
