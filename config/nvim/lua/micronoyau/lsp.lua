@@ -1,5 +1,5 @@
 local lspconfig = require('lspconfig')
--- lspconfig.clangd.setup {}
+lspconfig.clangd.setup {}
 
 local s = vim.keymap.set
 

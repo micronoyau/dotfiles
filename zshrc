@@ -102,3 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias layout-home="~/.screenlayout/home.sh"
+alias layout-single="~/.screenlayout/single.sh"
