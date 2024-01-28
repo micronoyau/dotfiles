@@ -28,16 +28,19 @@ cmp.setup {
   completion = {
     autocomplete = false
   },
+
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end
   },
+
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered()
   },
-  mapping = {
+
+  mapping = ({
     ['<C-Space>'] = function(fallback)
       if cmp.visible() then
         cmp.abort()
@@ -45,15 +48,17 @@ cmp.setup {
         cmp.complete()
       end
     end,
-    ['<cr>'] = cmp.confirm({ select = false }),
-    ['<Tab>'] = cmp.select_next_item(),
-    ['<S-Tab>'] = cmp.select_prev_item()
-  },
+    ['<cr>'] = cmp.mapping.confirm({ select = false }),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item()
+  }),
+
   sources = cmp.config.sources({
     { name = 'nvim_lsp', keyword_length=1 },
     -- { name = 'luasnip', keyword_length=2 },
     { name = 'buffer', keyword_length=3 }
   }),
+
   formatting = {
     fields = {'menu', 'abbr', 'kind'},
     format = function(entry, item)
@@ -63,7 +68,6 @@ cmp.setup {
         buffer = 'Ω',
         -- path = '🖫',
       }
-
       item.menu = menu_icon[entry.source.name]
       return item
     end,
