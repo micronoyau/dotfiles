@@ -60,11 +60,6 @@ require("lazy").setup({
 },
 
 {
-  "whonore/Coqtail",
-  tag = "1.7.0"
-},
-
-{
   "iamcco/markdown-preview.nvim",
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
   build = "cd app && yarn install",
@@ -77,11 +72,24 @@ require("lazy").setup({
 { 'RaafatTurki/hex.nvim' },
 
 {
-    'numToStr/Comment.nvim',
-    lazy = false,
+  'numToStr/Comment.nvim',
+  lazy = false,
 },
 
-{ 'neovim/nvim-lspconfig' }
+{ 'L3MON4D3/LuaSnip' },
+
+{ 'neovim/nvim-lspconfig' },
+
+{
+  'hrsh7th/nvim-cmp',
+  dependencies = {
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'saadparwaiz1/cmp_luasnip'
+  }
+}
 
 })
 
