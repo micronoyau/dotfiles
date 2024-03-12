@@ -2,11 +2,12 @@
 local lspconfig = require('lspconfig')
 lspconfig.clangd.setup {}
 lspconfig.rust_analyzer.setup {}
+lspconfig.tsserver.setup {}
 
 -- LSP Keymaps
 local s = vim.keymap.set
 
-s("n", "<leader>l?", ":lua vim.lsp.buf.hover()<cr>:lua vim.lsp.buf.hover()<cr>")
+s("n", "<leader>ll", ":lua vim.lsp.buf.hover()<cr>:lua vim.lsp.buf.hover()<cr>")
 s("n", "<leader>lhh", ":lua vim.lsp.buf.document_highlight()<cr>")
 s("n", "<leader>lhc", ":lua vim.lsp.buf.clear_references()<cr>")
 s("n", "<leader>ld", ":lua vim.lsp.buf.definition()<cr>")
