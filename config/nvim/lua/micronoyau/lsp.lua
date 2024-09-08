@@ -1,8 +1,15 @@
 -- Supported LSP servers
+require("mason").setup()
 local lspconfig = require('lspconfig')
-lspconfig.clangd.setup {}
-lspconfig.rust_analyzer.setup {}
-lspconfig.tsserver.setup {}
+require("mason-lspconfig").setup {
+  ensure_installed = { 'clangd', 'jdtls', 'pylsp', 'rust_analyzer' },
+  handlers = {
+    function(server_name)
+      lspconfig[server_name].setup{}
+    end
+  }
+}
+
 
 -- LSP Keymaps
 local s = vim.keymap.set
