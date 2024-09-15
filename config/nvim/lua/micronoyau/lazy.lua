@@ -100,7 +100,11 @@ require('lazy').setup({
     'hrsh7th/cmp-cmdline',
     'saadparwaiz1/cmp_luasnip'
   }
-}
+},
+
+ { 'mfussenegger/nvim-jdtls' },
+
+ { 'mfussenegger/nvim-dap' }
 
 })
 
