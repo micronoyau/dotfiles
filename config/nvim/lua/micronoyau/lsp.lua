@@ -26,6 +26,8 @@ s("n", "<leader>li", ":lua vim.lsp.buf.incoming_calls()<cr>")
 s("n", "<leader>lf", ":lua vim.diagnostic.open_float()<cr>:lua vim.diagnostic.open_float()<cr>")
 s("n", "<leader>lDh", ":lua vim.diagnostic.hide()<cr>")
 s("n", "<leader>lDs", ":lua vim.diagnostic.show()<cr>")
+s("n", "<leader>lsa", ":LspStart<cr>")
+s("n", "<leader>lso", ":LspStop<cr>")
 
 -- Autocompletion
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }

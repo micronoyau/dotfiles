@@ -108,5 +108,5 @@ alias layout-single="~/.screenlayout/single.sh"
 
 eval "$(zoxide init zsh)"
 
-export PATH=$PATH:~/.local/bin:/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/opt/android-tools:/opt/android-sdk/build-tools/35.0.0-rc4/:/opt/jadx/bin/:/opt/gradle-8.10.1/bin
+export PATH=$PATH:~/.local/bin:/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/opt/android-tools:/opt/android-sdk/build-tools/35.0.0-rc4/:/opt/jadx/bin/:/opt/gradle-8.10.1/bin:/opt/radare2/binr/radare2/radare2
 export ANDROID_HOME=/opt/android-sdk
