@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- TODO : tidy this a bit
 require('lazy').setup({
 {
   'folke/which-key.nvim',
@@ -102,12 +103,14 @@ require('lazy').setup({
   }
 },
 
- { 'mfussenegger/nvim-jdtls' },
+{ 'mfussenegger/nvim-jdtls' },
 
- { 'mfussenegger/nvim-dap' }
+{ 'mfussenegger/nvim-dap' },
 
+{'lewis6991/gitsigns.nvim'},
+{'tpope/vim-fugitive'},
+{'rbong/vim-flog'}
 })
 
 require('hex').setup()
 require('Comment').setup()
-
