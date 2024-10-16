@@ -42,11 +42,10 @@ s('n', '<leader><S-tab>', ':lua require("harpoon.ui").nav_prev()<cr>')
 
 s('n', '<leader>mp', ':MarkdownPreview<cr>')
 
-
 s('n', '<leader>gp', ':Gitsigns preview_hunk_inline<cr>')
 s('n', '<leader>gt', ':Gitsigns toggle_current_line_blame<cr>')
 s('n', '<leader>gb', ':Git blame<cr>')
-s('n', '<leader>ga', ':Git add .<cr>')
+s('n', '<leader>ga', ':Git add %<cr>')
 s('n', '<leader>gs', ':Git status<cr>')
 s('n', '<leader>gc', ':Git commit<cr>')
 s('n', '<leader>gl', ':Flogsplit<cr>')
