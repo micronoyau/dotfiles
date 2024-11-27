@@ -28,7 +28,7 @@ s('n', '<leader>p', '\"+p')
 s('n', '<leader>t2', ':set shiftwidth=2<cr>:set tabstop=2<cr>')
 s('n', '<leader>t4', ':set shiftwidth=4<cr>:set tabstop=4<cr>')
 
-s('n', '<leader>tt', ':ToggleTerm direction=float<cr>')
+s('n', '<leader>tt', ':ToggleTerm direction=horizontal<cr>')
 s('t', '<Esc>', '<c-\\><c-n>')
 
 s('n', '<leader>hd', ':HexDump<cr>')
@@ -49,3 +49,4 @@ s('n', '<leader>ga', ':Git add %<cr>')
 s('n', '<leader>gs', ':Git status<cr>')
 s('n', '<leader>gc', ':Git commit<cr>')
 s('n', '<leader>gl', ':Flogsplit<cr>')
+s('n', '<leader>gd', ':Git diff %<cr>')
