@@ -25,6 +25,13 @@ require("mason-lspconfig").setup {
     }
 }
 
+-- Language-specific
+lspconfig.clangd.setup {
+    cmd = {
+        "clangd",
+        "--fallback-style=webkit"
+    }
+}
 
 -- LSP Keymaps
 local s = vim.keymap.set

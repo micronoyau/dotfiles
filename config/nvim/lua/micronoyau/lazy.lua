@@ -93,7 +93,12 @@ require('lazy').setup({
     },
 
     -- Snippet engine
-    { 'L3MON4D3/LuaSnip' },
+    {
+        'L3MON4D3/LuaSnip',
+        dependencies = {
+            'honza/vim-snippets'
+        }
+    },
 
     -- Mason manage installed LSP servers
     { 'neovim/nvim-lspconfig' },
@@ -126,3 +131,4 @@ require('lazy').setup({
 
 require('hex').setup()
 require('Comment').setup()
+require("luasnip.loaders.from_snipmate").lazy_load()
