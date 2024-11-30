@@ -22,5 +22,3 @@ o.incsearch = true
 o.splitright = true
 
 o.list = true
-
-vim.g.coqtail_noimap = 1
