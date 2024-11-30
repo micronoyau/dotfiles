@@ -24,6 +24,8 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet --indicator
 
+exec --no-startup-id blueman-applet
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
