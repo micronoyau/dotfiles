@@ -72,6 +72,11 @@ input "1267:12458:CUST0001:00_04F3:30AA_Touchpad" {
     dwt enabled
 }
 
+input type:keyboard {
+    xkb_layout us,fr
+    xkb_options grp:rctrl_toggle
+}
+
 ### Key bindings
 #
 # Basics:
