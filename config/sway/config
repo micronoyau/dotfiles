@@ -179,8 +179,10 @@ input type:keyboard {
 
     bindsym $mod+Shift+r exec swaymsg rename workspace to $(bemenu -p "Rename current workspace :" < /dev/null) 
     bindsym $mod+o exec swaymsg workspace $(swaymsg -t get_workspaces | jq -r '.[].name' | bemenu -p "Name ?") 
-    bindsym Control+$mod+l exec swaymsg workspace next
-    bindsym Control+$mod+h exec swaymsg workspace prev
+    bindsym Control+$mod+l exec swaymsg workspace next_on_output
+    bindsym Control+$mod+h exec swaymsg workspace prev_on_output
+    bindsym Control+Shift+$mod+l exec swaymsg move window to workspace next_on_output
+    bindsym Control+Shift+$mod+h exec swaymsg workspace window to workspace prev_on_output
 
 #
 # Layout stuff:
