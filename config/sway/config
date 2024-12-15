@@ -182,7 +182,7 @@ input type:keyboard {
     bindsym Control+$mod+l exec swaymsg workspace next_on_output
     bindsym Control+$mod+h exec swaymsg workspace prev_on_output
     bindsym Control+Shift+$mod+l exec swaymsg move window to workspace next_on_output
-    bindsym Control+Shift+$mod+h exec swaymsg workspace window to workspace prev_on_output
+    bindsym Control+Shift+$mod+h exec swaymsg move window to workspace prev_on_output
 
 #
 # Layout stuff:
