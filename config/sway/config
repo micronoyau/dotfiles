@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term gnome-terminal
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -74,8 +74,9 @@ input "1267:12458:CUST0001:00_04F3:30AA_Touchpad" {
 }
 
 input type:keyboard {
-    xkb_layout us,fr
-    xkb_options grp:rctrl_toggle
+    xkb_layout "us"
+    xkb_variant "altgr-intl"
+    xkb_options "compose:ralt"
 }
 
 ### Key bindings
