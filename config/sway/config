@@ -25,7 +25,11 @@ set $menu dmenu_path | bemenu | xargs swaymsg exec --
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet --indicator
 
+# Bluetooth
 exec --no-startup-id blueman-applet
+
+# Screenshot
+exec --no-startup-id flameshot
 
 ### Output configuration
 #
@@ -50,6 +54,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+# Monitors
+exec_always pkill kanshi; exec kanshi
 
 ### Input configuration
 #
