@@ -56,7 +56,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 # Monitors
-exec_always pkill kanshi; exec kanshi
+exec_always kanshi
 
 ### Input configuration
 #
@@ -146,6 +146,9 @@ input type:keyboard {
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+    # Move to other monitor
+    bindsym $mod+x focus output right
+    bindsym $mod+Shift+x move workspace to output right
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -239,16 +242,28 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym Shift+$left resize shrink width 10px
+    bindsym Shift+$down resize grow height 10px
+    bindsym Shift+$up resize shrink height 10px
+    bindsym Shift+$right resize grow width 10px
 
     # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Shift+Left resize shrink width 10px
+    bindsym Shift+Down resize grow height 10px
+    bindsym Shift+Up resize shrink height 10px
+    bindsym Shift+Right resize grow width 10px
+
+    # Fast resize
+    bindsym $left resize shrink width 100px
+    bindsym $down resize grow height 100px
+    bindsym $up resize shrink height 100px
+    bindsym $right resize grow width 100px
+
+    # Fast resize
+    bindsym Left resize shrink width 100px
+    bindsym Down resize grow height 100px
+    bindsym Up resize shrink height 100px
+    bindsym Right resize grow width 100px
 
     # Return to default mode
     bindsym Return mode "default"
