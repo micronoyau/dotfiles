@@ -56,7 +56,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 # Monitors
-exec_always kanshi
+exec_always /opt/kanshi/build/kanshi
 
 ### Input configuration
 #
