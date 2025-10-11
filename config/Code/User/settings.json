@@ -104,4 +104,5 @@
     ],
     "editor.scrollBeyondLastLine": false,
     "editor.suggest.showReferences": false,
+    "extensions.ignoreRecommendations": true,
 }
