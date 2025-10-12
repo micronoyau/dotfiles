@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Solarized Light",
     "editor.fontFamily": "0xProto Nerd Font Mono",
     "editor.fontSize": 16,
     "vim.leader": "<space>",
@@ -100,9 +100,26 @@
             "commands": [
                 "editor.action.showDefinitionPreviewHover"
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "f"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
         }
     ],
     "editor.scrollBeyondLastLine": false,
     "editor.suggest.showReferences": false,
     "extensions.ignoreRecommendations": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "explorer.confirmDelete": false,
 }
