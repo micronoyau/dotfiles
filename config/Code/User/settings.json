@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Default Dark+",
     "editor.fontFamily": "0xProto Nerd Font Mono",
     "editor.fontSize": 16,
     "vim.leader": "<space>",
@@ -12,6 +12,16 @@
             ],
             "commands": [
                 "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
             ]
         },
         {
@@ -110,16 +120,32 @@
             "commands": [
                 "editor.action.marker.next"
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "d"
+            ],
+            "commands": [
+                "git.openChange"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "p"
+            ],
+            "commands": [
+                "editor.action.dirtydiff.next"
+            ]
         }
     ],
     "editor.scrollBeyondLastLine": false,
     "editor.suggest.showReferences": false,
     "extensions.ignoreRecommendations": true,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "explorer.confirmDelete": false,
+    "python.defaultInterpreterPath": "/bin/python",
+    "explorer.confirmDragAndDrop": false,
 }

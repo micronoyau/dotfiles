@@ -44,5 +44,13 @@
         "key": "shift+tab",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.moveEditorRightInGroup"
     }
 ]

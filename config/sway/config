@@ -222,6 +222,10 @@ input type:keyboard {
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+    # Move focus to child container
+    bindsym $mod+Shift+a focus child
+
 #
 # Scratchpad:
 #
