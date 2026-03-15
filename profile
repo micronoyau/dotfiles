@@ -1,5 +1,7 @@
 . "$HOME/.cargo/env"
 
+export EDITOR=/usr/bin/vim
+
 # Local binaries
 export PATH=$PATH:~/.local/bin:~/bin
 # Android sdk
@@ -8,3 +10,5 @@ export ANDROID_HOME=/opt/android/sdk
 # Android tools
 export PATH=$PATH:/opt/android/magisk-v30.6:/opt/jadx/bin:/opt/gradle-8.10.1/bin:/opt/smali
 
+
+. "$HOME/.atuin/bin/env"

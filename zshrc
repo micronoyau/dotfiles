@@ -112,3 +112,10 @@ source ~/.profile
 
 # Java apps
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# opencode
+export PATH=/home/micronoyau/.opencode/bin:$PATH
+
+# Atuin
+eval "$(atuin init zsh --disable-up-arrow)"
+
